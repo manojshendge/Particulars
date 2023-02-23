@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Particulars</title>
+</head>
+<body>
+    <form action="form.php"  method="Post" name="form" >
+    <div class="main-container">
+        <div class="name1" style="margin-bottom: 50px; font-size:25px; text-align: left;">
+            Ful Name Of Student: <span><input type="text" name="FullNameofStudent" id="name1" style="padding: 2%;  font-size: 21px;"></span>
+        </div>
+        <table id="table" >
+            
+            <tr>
+                <th>s.no</th>
+                <th colspan="2">Particulars</th>
+                <th>Amount<br>(Rs.)</th>
+            </tr>
+            <tr bgcolor="#87CEEB">
+                <td>00</td>
+                <td  colspan="2" class="name">Admission Fee</td>
+                <td  bgcolor="#DDDDDD"><input type="text" name="AdmissionFee"  id="AdmissionFee" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td colspan="2" class="name">Tuition Fee</td>
+                <td  ><input type="text" name="TuitionFee" id="TuitionFee" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr>
+            <tr bgcolor="#87CEEB">
+                <td>02</td>
+                <td colspan="2" class="name">Computer Fee</td>
+                <td  bgcolor="#DDDDDD"><input type="text" name="ComputerFee" id="ComputerFee" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr><tr>
+                <td>03</td>
+                <td colspan="2" class="name">Lab Fee</td>
+                <td  bgcolor="#DDDDDD"><input type="text" name="LabFee" id="LabFee" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr>
+            <tr bgcolor="#87CEEB">
+                <td>04</td>
+                <td colspan="2" class="name">Fine</td>
+                <td  bgcolor="white"><input type="text" name="Fine" id="Fine" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td colspan="2" class="name">Transfer Certificate</td>
+                <td  bgcolor="#DDDDDD"><input type="text" name="TransferCertificate" id="TransferCertificate" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr>
+            <tr bgcolor="#87CEEB">
+                <td>06</td>
+                <td colspan="2" class="name">Book Fee</td>
+                <td  bgcolor="white"><input type="text" name="BookFee" id="BookFee" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td colspan="2" class="name">Board Rgs.Fee</td>
+                <td ><input type="text" name="BoardRgs.Fee" id="BoardRgs.Fee" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr>
+            <tr bgcolor="#87CEEB">
+                <td>08</td>
+                <td colspan="2" class="name">Annual Charges Apr</td>
+                <td  bgcolor="#DDDDDD"><input type="text" name="AnnualChargesAp" id="AnnualChargesAp" class="input" placeholder="Enter Amount" value="3000"></td>
+            </tr>
+            <tr>
+                <td>09</td>
+                <td colspan="2" class="name">Annual Charges Sep</td>
+                <td  bgcolor="#DDDDDD"><input type="tel" name="AnnualChargesSep" id="AnnualChargesSep" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr>
+            <tr bgcolor="#87CEEB">
+                <td>10</td>
+                <td colspan="2" class="name" >Bus Fee</td>
+                <td  bgcolor="#DDDDDD"><input type=" tel" name="BusFee" id="BusFee" class="input"  placeholder="Enter Amount" value="0"></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td colspan="2" class="name">Other Fee</td>
+                <td ><input type="text" name="OtherFee" id="OtherFee" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr><tr>
+                <td id="sp" rowspan="3" colspan="2"><a href="#"> Separate Fees</a></td>
+                <!-- <td rowspan="3" >hi</td> -->
+                <td>Previous Bal</td>
+                <td  bgcolor="#DDDDDD"><input type="text" name="PreviousBal" id="PreviousBal" class="input" placeholder="Enter Amount" value="0"></td>
+            </tr><tr>
+                <!-- <td>13</td> -->
+                <!-- <td>&nbsp;</td> -->
+                <td>Monthly Fix Discount</td>
+                <td class="td"  id="total" bgcolor="#DDDDDD"><input type="text" id="MonthlyFixDiscount" name="MonthlyFixDiscount" class="input1" placeholder="Enter Amount" value="0" required></td>
+            </tr><tr>
+                <!-- <td>14</td> -->
+                <!-- <td></td> -->
+                <td>Total</td>
+                <td class="td" id="total" bgcolor="#DDDDDD"><input type="text" name="Total"  class="input1" placeholder="Enter Amount" value="0"></td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <button type="submit" class="btn">ADD</button>
+            <button type="reset"  class="btn" >EDIT</button>
+        </div>
+    </div>
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
